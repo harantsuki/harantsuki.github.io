@@ -1,0 +1,101 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    box-sizing: border-box;
+    font-size: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+.wallpaper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Sevila.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 0.4s all;
+    z-index: -1;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0 20px;
+}
+
+.img {
+    width: 100px;
+    height: 200px;
+    transition: 0.4s all;
+    border-radius: 5px;
+}
+
+.img:hover {
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.img-1 {
+    background-image: url(Sevila.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url(/Screenshot\ 2023-12-20\ 185858.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-3 {
+    background-image: url(/Screenshot\ 2023-12-20\ 190008.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.wp-1.sevilan-1 {
+    opacity: 1;
+}
+
+.wp-1.sevilan-2 {
+    opacity: 1;
+    background-image: url(/Screenshot\ 2023-12-20\ 185858.png);
+
+}
+.wp-1.sevilan-3 {
+    opacity: 1;
+    background-image: url(/Screenshot\ 2023-12-20\ 190008.png);
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .img {
+        width: 100px;
+        height: 130px;
+        transition: 0.4s all;
+        border-radius: 5px;
+    }
+    .img:hover {
+        width: 150px;
+        height: 200px;
+        border-radius: 20px;
+    }
+}
